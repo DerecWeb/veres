@@ -202,84 +202,207 @@
 
                                         </div><!-- END Row 4-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-                                        <div class="form-group">
-                                            <h5>File Input Field <span class="text-danger">*</span></h5>
-                                            <div class="controls">
-                                                <input type="file" name="file" class="form-control" required> </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-12">
-
-                                        <div class="form-group">
-                                            <h5>Text Input Range <span class="text-danger">*</span></h5>
-                                            <div class="controls">
-                                                <input type="text" name="text" class="form-control" required data-validation-required-message="This field is required" minlength="10" maxlength="20" placeholder="Enter number between 10 &amp; 20"> </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <h5>Basic Select <span class="text-danger">*</span></h5>
-                                            <div class="controls">
-                                                <select name="select" id="select" required class="form-control">
-                                                    <option value="">Select Your City</option>
-                                                    <option value="1">India</option>
-                                                    <option value="2">USA</option>
-                                                    <option value="3">UK</option>
-                                                    <option value="4">Canada</option>
-                                                    <option value="5">Dubai</option>
-                                                </select>
+                                        <div class="row"><!-- Row 5-->
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <h5>Добавить цвет</h5>
+                                                    <div class="controls">
+                                                        <input type="text" name="product_tag_ua" class="form-control" value="Кроватки, Комоды, Шкафы" data-role="tagsinput"> </div>
+                                                    @error('product_tag_ru')
+                                                    <span class="text-danger">{{$message}}</span>
+                                                    @enderror
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <h5>Textarea <span class="text-danger">*</span></h5>
-                                            <div class="controls">
-                                                <textarea name="textarea" id="textarea" class="form-control" required placeholder="Textarea text"></textarea>
+                                            <div class="col-md-4">
+
+                                                <div class="form-group">
+                                                    <h5>Добавить размер</h5>
+                                                    <div class="controls">
+                                                        <input type="text" name="product_tag_ua" class="form-control" value="Кроватки, Комоды, Шкафы" data-role="tagsinput"> </div>
+                                                    @error('product_tag_ru')
+                                                    <span class="text-danger">{{$message}}</span>
+                                                    @enderror
+                                                </div>
                                             </div>
+                                            <div class="col-md-4">
+
+                                                <div class="form-group">
+                                                    <h5>Опции</h5>
+                                                    <div class="controls">
+                                                        <input type="text" name="product_tag_ua" class="form-control" value="Кроватки, Комоды, Шкафы" data-role="tagsinput"> </div>
+                                                    @error('product_tag_ru')
+                                                    <span class="text-danger">{{$message}}</span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+
+
+                                        </div><!-- END Row 4-->
+
+                                        <div class="row"> <!-- 5 Row -->
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <h5>Цена</h5>
+                                                <div class="controls">
+                                                    <input type="text" name="product_tag_ua" class="form-control" > </div>
+                                                @error('product_tag_ru')
+                                                <span class="text-danger">{{$message}}</span>
+                                                @enderror
+                                            </div>
+
+
                                         </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <h5>Цена со скидкой</h5>
+                                                    <div class="controls">
+                                                        <input type="text" name="product_tag_ua" class="form-control"  > </div>
+                                                    @error('product_tag_ru')
+                                                    <span class="text-danger">{{$message}}</span>
+                                                    @enderror
+                                                </div>
+
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <h5>Бонус клиенту</h5>
+                                                    <div class="controls">
+                                                        <input type="text" name="product_tag_ua" class="form-control"  > </div>
+                                                    @error('product_tag_ru')
+                                                    <span class="text-danger">{{$message}}</span>
+                                                    @enderror
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                        <div class="row"> <!-- 5 Row -->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <h5>Главное изображение <span class="text-danger">*</span></h5>
+                                                    <div class="controls">
+                                                        <input type="file" name="file" class="form-control" required> </div>
+                                                    @error('product_tumb')
+                                                    <span class="text-danger">{{$message}}</span>
+                                                    @enderror
+                                                </div>
+
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <h5>Главное изображение <span class="text-danger">*</span></h5>
+                                                    <div class="controls">
+                                                        <input type="file" name="file" class="form-control" required> </div>
+                                                    @error('product_tumb')
+                                                    <span class="text-danger">{{$message}}</span>
+                                                    @enderror
+                                                </div>
+
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="row"> <!-- Start Row-->
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <h5>Описание Снипет(укр) <span class="text-danger">*</span></h5>
+                                                <div class="controls">
+                                                    <textarea name="textarea" id="textarea" class="form-control" required placeholder="Textarea text"></textarea>
+                                                </div>
+                                            </div>
+
+                                        </div> <!-- End col-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <h5>Описание Снипет(рус) <span class="text-danger">*</span></h5>
+                                                    <div class="controls">
+                                                        <textarea name="textarea" id="textarea" class="form-control" required placeholder="Textarea text"></textarea>
+                                                    </div>
+                                                </div>
+
+                                            </div> <!-- End col-->
+
+                                        </div><!--END Start Row-->
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+
+                                                    <div class="box">
+
+                                                        <!-- /.box-header -->
+                                                        <div class="box-body">
+                                                            <h4 class="box-title">Полное описание(укр)</h4><br>
+                                                            <form>
+                                                    <textarea id="editor1" name="editor1" rows="10" cols="80">
+                                            This is my textarea to be replaced with CKEditor.
+                                                    </textarea>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div> <!-- End col-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+
+                                                    <div class="box">
+
+                                                        <!-- /.box-header -->
+                                                        <div class="box-body">
+                                                            <h4 class="box-title">Полное описание(укр)</h4><br>
+                                                            <form>
+                                                    <textarea id="editor2" name="editor2" rows="10" cols="80">
+                                            This is my textarea to be replaced with CKEditor.
+                                                    </textarea>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div> <!-- End col-->
+                                        </div> <!-- End row -->
+
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <h5>Акции<span class="text-danger">*</span></h5>
+                                                    <div class="controls">
+                                                        <input type="checkbox" id="checkbox_1" required value="single">
+                                                        <label for="checkbox_1">Участвует товар в распродаже</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <h5>Блоки <span class="text-danger">*</span></h5>
+                                                    <div class="controls">
+                                                        <fieldset>
+                                                            <input type="checkbox" id="checkbox_2" required value="x">
+                                                            <label for="checkbox_2">Новинки</label>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <input type="checkbox" id="checkbox_3" value="y">
+                                                            <label for="checkbox_3">Рекомендованный</label>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="text-xs-right">
+                                            <input type="submit" class="btn btn-rounded btn-info mb-5 mt-5" value="Сохранить" >
+                                        </div>
+
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <h5>Checkbox <span class="text-danger">*</span></h5>
-                                            <div class="controls">
-                                                <input type="checkbox" id="checkbox_1" required value="single">
-                                                <label for="checkbox_1">Check this custom checkbox</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <h5>Checkbox Group <span class="text-danger">*</span></h5>
-                                            <div class="controls">
-                                                <fieldset>
-                                                    <input type="checkbox" id="checkbox_2" required value="x">
-                                                    <label for="checkbox_2">I am unchecked Checkbox</label>
-                                                </fieldset>
-                                                <fieldset>
-                                                    <input type="checkbox" id="checkbox_3" value="y">
-                                                    <label for="checkbox_3">I am unchecked too</label>
-                                                </fieldset>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div class="text-xs-right">
-                                    <input type="submit" class="btn btn-rounded btn-info mb-5 mt-5" value="Сохранить" >
-                                </div>
                             </form>
 
                         </div>
